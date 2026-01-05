@@ -32,10 +32,10 @@ const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab, searchQuery, s
 
         {/* Mobile Branding */}
         <div className="md:hidden flex items-center gap-2 mr-2 shrink-0">
-          <div className="w-8 h-8 rounded-lg bg-emerald-500 flex items-center justify-center text-lg shadow-[0_0_10px_rgba(16,185,129,0.4)]">🐺</div>
+          <div className="w-8 h-8 rounded-lg bg-emerald-500 flex items-center justify-center text-lg">🐺</div>
           <div className="flex flex-col">
             <span className="text-[10px] font-black uppercase tracking-tighter italic leading-none">Alphas Den</span>
-            <span className="text-[6px] text-emerald-500 font-black uppercase tracking-widest mt-0.5 animate-pulse">V2 LIVE</span>
+            <span className="text-[6px] text-emerald-500 font-black uppercase tracking-widest mt-0.5 animate-pulse">V3 ONLINE</span>
           </div>
         </div>
 
@@ -47,7 +47,7 @@ const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab, searchQuery, s
               onClick={() => setActiveTab(tab.id)}
               className={`whitespace-nowrap px-4 py-2.5 text-[9px] font-black uppercase tracking-widest rounded-xl transition-all duration-300 border-2 ${
                 activeTab === tab.id
-                  ? 'bg-white text-black border-white shadow-[0_0_20px_rgba(255,255,255,0.2)] scale-105'
+                  ? 'bg-white text-black border-white shadow-[0_0_20px_rgba(255,255,255,0.2)]'
                   : 'text-zinc-500 border-zinc-900 bg-zinc-950/50 hover:text-zinc-200'
               }`}
             >
@@ -57,7 +57,6 @@ const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab, searchQuery, s
         </div>
       </div>
 
-      {/* Desktop Search */}
       <div className="hidden lg:flex items-center gap-4 shrink-0">
         <div className="flex items-center gap-3 px-4 py-3 bg-zinc-950 border border-zinc-900 rounded-xl focus-within:border-emerald-500/50 transition-all">
           <span className="text-zinc-600 text-xs italic font-black">SCAN</span>
