@@ -33,7 +33,10 @@ const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab, searchQuery, s
         {/* Mobile Branding */}
         <div className="md:hidden flex items-center gap-2 mr-2 shrink-0">
           <div className="w-8 h-8 rounded-lg bg-emerald-500 flex items-center justify-center text-lg shadow-[0_0_10px_rgba(16,185,129,0.4)]">🐺</div>
-          <span className="text-[10px] font-black uppercase tracking-tighter italic">Alphas Den</span>
+          <div className="flex flex-col">
+            <span className="text-[10px] font-black uppercase tracking-tighter italic leading-none">Alphas Den</span>
+            <span className="text-[6px] text-emerald-500 font-black uppercase tracking-widest mt-0.5 animate-pulse">V2 LIVE</span>
+          </div>
         </div>
 
         {/* Swipeable Tabs */}
